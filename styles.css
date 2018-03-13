@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url(svgs/background.svg);
 }
 
 #container {
@@ -30,6 +31,7 @@ a {
 
 a:hover {
   color: #111;
+  fill: #111;
 }
 
 header {
@@ -44,6 +46,10 @@ header nav {
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
+}
+
+nav svg {
+  height: 14px;
 }
 
 main {
