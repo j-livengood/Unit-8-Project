@@ -23,15 +23,20 @@ p {
   text-align: left;
 }
 
+li svg {
+  padding-top: 3px;
+  transform-origin: 50% 50%;
+}
+
 a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  transition: color .3s ease-out;
 }
 
-a:hover * {
+a:hover {
   color: #111;
-  fill: #111;
 }
 
 
@@ -86,13 +91,23 @@ main h2 {
   display: none;
 }
 
+.coats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .coats div {
-  display: inline;
-  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .coats span {
-  display: block;
+  padding-top: 10px;
+  color: #ba8058;
+  padding-right: 20px;
 }
 
 .sable {
@@ -120,6 +135,30 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+
+/* ===== HOVER STATES ===== */
+
+a path {
+  transition: transform .3s ease-out, fill .3s ease-out;
+  transform-origin: 50% 50%;
+}
+
+a:hover path {
+  fill: #111;
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.header-svg {
+  transform-origin: 50% 50%;
+  transition: transform .5s;
+  transition-timing-function: cubic-bezier(0.6,0,0.29,1);
+}
+
+.header-svg:hover {
+  transform: scale(1.2) rotate(10deg);
 }
 
 
