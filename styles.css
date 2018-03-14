@@ -7,7 +7,6 @@ body {
   color: #111;
   background: #edeff0;
   background-image: url(svgs/background.svg);
-  box-sizing: content-box;
 }
 
 #container {
@@ -90,11 +89,6 @@ main h2 {
 .coats div {
   display: inline;
   max-width: 150px;
-}
-
-.coats svg {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .coats span {
