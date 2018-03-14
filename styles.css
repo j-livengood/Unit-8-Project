@@ -7,6 +7,7 @@ body {
   color: #111;
   background: #edeff0;
   background-image: url(svgs/background.svg);
+  box-sizing: content-box;
 }
 
 #container {
@@ -29,10 +30,14 @@ a {
   font-weight: 700;
 }
 
-a:hover {
+a:hover * {
   color: #111;
   fill: #111;
 }
+
+
+
+/* ===== HEADER ===== */
 
 header {
   padding-top: 10px;
@@ -48,9 +53,27 @@ header nav ul li {
   margin-right: 20px;
 }
 
-nav svg {
+.nav-svg {
   height: 14px;
 }
+
+.header-name {
+  display: block;
+  margin-bottom: 0;
+}
+
+.st1 {
+  display: none;
+}
+
+.header-svg {
+  width: 140px;
+  height: 120px;
+}
+
+
+
+/* ===== MAIN ===== */
 
 main {
   padding-top: 50px;
@@ -60,9 +83,62 @@ main h2 {
   font-size: 28px;
 }
 
+.root-svg {
+  display: none;
+}
+
+.coats div {
+  display: inline;
+  max-width: 150px;
+}
+
+.coats svg {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.coats span {
+  display: block;
+}
+
+.sable {
+  color: #BA8058;
+}
+
+.fawn {
+  color: #F4C6A6;
+}
+
+.red {
+  color: #824b2d;
+}
+
+.stone {
+  color: #52595f;
+}
+
+
+
+/* ===== FOOTER ===== */
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (min-width: 425px) {
+  
+  .header-name {
+    display: none;
+  }
+  
+  .st1 {
+    display: block;
+  }
 }
